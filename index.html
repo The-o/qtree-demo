@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Демонстрация работы Quad-деревьев</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+        #demo {
+            text-align: center;
+        }
+        #map {
+            width: 600px; 
+            height: 600px;
+            display: inline-block;
+        }
+        #log {
+            width: 600px;
+            height: 600px;
+            display: inline-block;
+        }
+        .map_point {
+            width: 21px; 
+            height: 36px; 
+            background: url(i/pin.png);
+            margin-top: -36px !important;
+            margin-left: -10px !important;
+        }
+    </style>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=&lang=ru_RU" type="text/javascript"></script>
+
+    <script src="./src/qtree.js" type="text/javascript"></script>
+    <script src="./src/wgs84.js" type="text/javascript"></script>
+    <script src="./src/offices.js" type="text/javascript"></script>
+    <script src="./src/server.js" type="text/javascript"></script>
+
+    <script src="./src/client.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+    <div id="demo">
+        <div id="map"></div>
+        <textarea id="log" readonly></textarea>
+    </div>
+</body>
+
+</html>
